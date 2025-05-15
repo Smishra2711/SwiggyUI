@@ -1,0 +1,18 @@
+{
+  "name": "Flutter Codespace",
+  "image": "ghcr.io/cirruslabs/flutter:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/android-sdk:1": {
+      "packages": ["platforms;android-33", "build-tools;33.0.2"]
+    }
+  },
+  "postCreateCommand": "flutter doctor",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.flutter",
+        "dart-code.dart-code"
+      ]
+    }
+  }
+}
